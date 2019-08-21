@@ -12,7 +12,7 @@
     transition: transform 350ms ease-in-out;
 
     &-section-home {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
 
     &-section-top {
@@ -30,7 +30,10 @@
         margin-top: 4rem;
 
         &-title {
-            font-size: 1.5rem;
+            font-size: 1.75rem;
+            font-weight: 400;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(0, 0, 0, .15);
         }
     }
 
@@ -51,10 +54,8 @@
             padding-top: .5rem;
             padding-bottom: .5rem;
 
-            text-decoration: none;
-            color: #000;
             font-size: 1.5rem;
-            font-weight: 300;
+            font-weight: 400;
         }
     }
 }

@@ -13,5 +13,4 @@ const navModule = (() => {
 
     burgerIcon.addEventListener("click", openNav);
     closeBtn.addEventListener("click", closeNav);
-
 })();

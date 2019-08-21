@@ -10,6 +10,11 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .burger-nav-icon {
   width: 40px;
   height: 100%;
@@ -50,6 +55,7 @@ html {
 }
 .hero-section-arrow {
   width: 45px;
+  animation: arrowPulse 550ms ease-in-out infinite alternate;
 }
 @keyframes arrowPulse {
   from {
@@ -61,7 +67,6 @@ html {
 }
 
 .hero-section-link {
-  text-decoration: none;
   outline: none;
 }
 
@@ -85,7 +90,6 @@ html {
 }
 
 .artists-section-link {
-  text-decoration: none;
   transition: all 250ms ease;
   transform: translateZ(0);
 }
@@ -132,7 +136,7 @@ html {
   transition: transform 350ms ease-in-out;
 }
 .nav-section-home {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 .nav-section-top {
   display: flex;
@@ -147,7 +151,10 @@ html {
   margin-top: 4rem;
 }
 .nav-artists-title {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 .nav-list {
   margin-top: 1rem;
@@ -164,14 +171,120 @@ html {
   display: block;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  text-decoration: none;
-  color: #000;
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .nav-active {
   transform: translate3d(0, 0, 0);
+}
+
+.header-page {
+  position: absolute;
+  z-index: 1;
+  top: 2rem;
+  left: 2.5rem;
+}
+
+.landing-page-container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.landing-left {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing-left-title {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.landing-right-top {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: lightgreen;
+}
+
+.landing-right-bottom {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: coral;
+}
+
+.landing-left,
+.landing-right-top,
+.landing-right-bottom {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.album-list {
+  list-style: none;
+}
+
+.landing-right-top,
+.landing-right-bottom {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.landing-right-top-title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.album-list {
+  padding-top: 2rem;
+}
+.album-list-song {
+  padding-left: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.landing-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.landing-cta-title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.landing-cta-arrow {
+  width: 40px;
+}
+
+.landing-left-title {
+  font-size: 3rem;
+}
+
+.uv-landing-left {
+  background-image: url(../../images/pictures/purple-rain.jpg);
+}
+
+.uv-landing-right-top {
+  background-color: #7d7bd8;
+}
+
+.uv-landing-right-bottom {
+  background-image: url(../../images/pictures/fashion-woman-holding-record.jpg);
+  background-position: top center;
 }
 
 /*# sourceMappingURL=style.css.map */

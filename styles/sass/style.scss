@@ -10,5 +10,13 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 @import "home";
 @import "nav";
+@import "header-page";
+@import "landing-page";
+@import "ultraviolet";

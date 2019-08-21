@@ -42,7 +42,7 @@
 
         &-arrow {
             width: 45px;
-            // animation: arrowPulse 550ms ease-in-out infinite alternate;
+            animation: arrowPulse 550ms ease-in-out infinite alternate;
 
             @keyframes arrowPulse {
                 from {
@@ -58,7 +58,6 @@
 }
 
 .hero-section-link {
-    text-decoration: none;
     outline: none;
 }
 
@@ -84,7 +83,6 @@
 }
 
 .artists-section-link {
-    text-decoration: none;
     transition: all 250ms ease;
     transform: translateZ(0);
 
