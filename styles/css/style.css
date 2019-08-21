@@ -13,6 +13,7 @@ html {
 .burger-nav-icon {
   width: 40px;
   height: 100%;
+  cursor: pointer;
 }
 
 .header-home {
@@ -61,23 +62,23 @@ html {
 
 .hero-section-link {
   text-decoration: none;
-  outline: #fff;
+  outline: none;
 }
 
 .artists {
   background-color: #8fe4e1;
   min-height: 100vh;
-  display: grid;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .artists-title {
   font-weight: 600;
   font-size: 2.5rem;
-  margin-top: 3rem;
 }
 .artists-section {
-  margin: 4rem 2rem 2rem 2rem;
+  margin: 2rem;
   display: grid;
   grid-template-columns: repeat(3, minmax(250px, 450px));
   grid-gap: 2rem;
@@ -112,6 +113,65 @@ html {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+}
+.footer-home-copyright {
+  font-weight: 300;
+  font-size: 1.05rem;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 100%;
+  padding: 4rem 2rem;
+  background-color: #f7f7f7;
+  transform: translate3d(-100%, 0, 0);
+  z-index: 10;
+  transition: transform 350ms ease-in-out;
+}
+.nav-section-home {
+  font-size: 1.5rem;
+}
+.nav-section-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-section-close {
+  width: 25px;
+  cursor: pointer;
+}
+.nav-artists {
+  margin-top: 4rem;
+}
+.nav-artists-title {
+  font-size: 1.5rem;
+}
+.nav-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.nav-item {
+  display: block;
+  width: 100%;
+}
+.nav-item-link {
+  width: 100%;
+  display: block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.nav-active {
+  transform: translate3d(0, 0, 0);
 }
 
 /*# sourceMappingURL=style.css.map */
