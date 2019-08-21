@@ -68,42 +68,56 @@ html {
     }
 }
 
+.hero-section-link {
+    text-decoration: none;
+    outline: #fff;
+}
+
 .artists {
     background-color: #8fe4e1;
-    min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    min-height: 100vh;
+    display: grid;
+    justify-items: center;
     align-items: center;
 
     &-title {
         font-weight: 600;
         font-size: 2.5rem;
+        margin-top: 3rem;
     }
 
     &-section {
-        margin-top: 4rem;
+        margin: 4rem 2rem 2rem 2rem;
         display: grid;
-        width: 100%;
-        grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
-        justify-content: center;
+        grid-template-columns: repeat(3, minmax(250px, 450px));
         grid-gap: 2rem;
     }
 }
 
+.artists-section-link {
+    text-decoration: none;
+    transition: all 250ms ease;
+    transform: translateZ(0);
+
+    &:hover {
+        transform: translate3d(0, -6px, 0);
+        box-shadow: 0 4px 14px rgba(61, 112, 110, .3);
+    }
+}
+
 .artists-section-fig {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
 
     &-img {
         width: 100%;
     }
 
     &-title {
+        margin-top: 1rem;
         font-weight: 400;
         font-size: 1.5rem;
+        text-align: center;
+        color: #000;
     }
 }
 
