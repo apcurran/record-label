@@ -6,6 +6,7 @@ $cutting-blue: #3e465b;
 
 .cutting-title {
     color: #000;
+    text-shadow: -2px -2px 4px #fff;
 }
 
 .cutting-landing-right-top {
@@ -21,10 +22,8 @@ $cutting-blue: #3e465b;
     background-color: $cutting-blue;
 }
 
-.cutting-history-title {
-    color: $cutting-blue;
-}
-
+.cutting-history-title,
+.cutting-work-title,
 .cutting-tab:hover {
     color: $cutting-blue;
 }

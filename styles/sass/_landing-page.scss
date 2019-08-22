@@ -135,7 +135,8 @@
     grid-area: panel;
 }
 
-.history-title {
+.history-title,
+.work-title {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
@@ -192,4 +193,15 @@ p + p {
 
 .panel.-showing {
     display: block;
+    animation: fadeIn 1200ms ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

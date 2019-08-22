@@ -322,7 +322,8 @@ a {
   grid-area: panel;
 }
 
-.history-title {
+.history-title,
+.work-title {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -374,8 +375,17 @@ p + p {
 
 .panel.-showing {
   display: block;
+  animation: fadeIn 1200ms ease;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .uv-landing-left {
   background-image: url(../../images/pictures/purple-rain.jpg);
 }
@@ -393,10 +403,8 @@ p + p {
   background-color: #7d7bd8;
 }
 
-.uv-history-title {
-  color: #7d7bd8;
-}
-
+.uv-history-title,
+.uv-work-title,
 .uv-tab:hover {
   color: #7d7bd8;
 }
@@ -418,10 +426,8 @@ p + p {
   background-color: #026888;
 }
 
-.liquid-history-title {
-  color: #026888;
-}
-
+.liquid-history-title,
+.liquid-work-title,
 .liquid-tab:hover {
   color: #026888;
 }
@@ -432,6 +438,7 @@ p + p {
 
 .cutting-title {
   color: #000;
+  text-shadow: -2px -2px 4px #fff;
 }
 
 .cutting-landing-right-top {
@@ -447,10 +454,8 @@ p + p {
   background-color: #3e465b;
 }
 
-.cutting-history-title {
-  color: #3e465b;
-}
-
+.cutting-history-title,
+.cutting-work-title,
 .cutting-tab:hover {
   color: #3e465b;
 }
