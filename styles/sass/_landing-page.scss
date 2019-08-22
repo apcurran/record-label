@@ -90,3 +90,106 @@
 .landing-left-title {
     font-size: 3rem;
 }
+
+// Bottom Main Grid //
+
+.page-main {
+    padding-left: 4rem;
+
+    display: grid;
+    grid-column-gap: 10rem;
+    grid-template-columns: 7fr 2fr;
+    grid-template-rows: 150px 150px 1fr 150px;
+    grid-template-areas:
+        "social sidebar"
+        "tabs sidebar"
+        "panel sidebar"
+        "footer sidebar";
+}
+
+.social {
+    grid-area: social;
+
+    display: flex;
+    align-items: flex-end;
+
+    &-link {
+        margin-right: .5rem;
+    }
+}
+
+.tab-list {
+    grid-area: tabs;
+    list-style: none;
+
+    &-tab {
+        margin-right: 1rem;
+        border-bottom: 1px solid #000;
+        cursor: pointer;
+        transition: color 200ms ease;
+        font-size: 1.2rem;
+    }
+}
+
+.panel {
+    grid-area: panel;
+}
+
+.history-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.sidebar {
+    grid-area: sidebar;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 4rem;
+
+    &-fig:first-child {
+        padding-bottom: 4rem;
+    }
+}
+
+.page-footer { 
+    grid-area: footer;
+}
+
+.tab-list,
+.page-footer {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-fig {
+    width: 290px;
+
+    &-img {
+        width: 100%;
+    }
+}
+
+.social-link {
+    display: inline-block;
+    width: 40px;
+
+    &-icon {
+        width: 100%;
+    }
+}
+
+
+p + p {
+    margin-top: 2rem;
+}
+
+.panel {
+    display: none;
+}
+
+.panel.-showing {
+    display: block;
+}

@@ -8,6 +8,7 @@ html {
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.03em;
   scroll-behavior: smooth;
+  line-height: 1.6;
 }
 
 a {
@@ -287,6 +288,94 @@ a {
   font-size: 3rem;
 }
 
+.page-main {
+  padding-left: 4rem;
+  display: grid;
+  grid-column-gap: 10rem;
+  grid-template-columns: 7fr 2fr;
+  grid-template-rows: 150px 150px 1fr 150px;
+  grid-template-areas: "social sidebar" "tabs sidebar" "panel sidebar" "footer sidebar";
+}
+
+.social {
+  grid-area: social;
+  display: flex;
+  align-items: flex-end;
+}
+.social-link {
+  margin-right: 0.5rem;
+}
+
+.tab-list {
+  grid-area: tabs;
+  list-style: none;
+}
+.tab-list-tab {
+  margin-right: 1rem;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+  transition: color 200ms ease;
+  font-size: 1.2rem;
+}
+
+.panel {
+  grid-area: panel;
+}
+
+.history-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 4rem;
+}
+.sidebar-fig:first-child {
+  padding-bottom: 4rem;
+}
+
+.page-footer {
+  grid-area: footer;
+}
+
+.tab-list,
+.page-footer {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-fig {
+  width: 290px;
+}
+.sidebar-fig-img {
+  width: 100%;
+}
+
+.social-link {
+  display: inline-block;
+  width: 40px;
+}
+.social-link-icon {
+  width: 100%;
+}
+
+p + p {
+  margin-top: 2rem;
+}
+
+.panel {
+  display: none;
+}
+
+.panel.-showing {
+  display: block;
+}
+
 .uv-landing-left {
   background-image: url(../../images/pictures/purple-rain.jpg);
 }
@@ -298,6 +387,18 @@ a {
 .uv-landing-right-bottom {
   background-image: url(../../images/pictures/fashion-woman-holding-record.jpg);
   background-position: top center;
+}
+
+.uv-sidebar {
+  background-color: #7d7bd8;
+}
+
+.uv-history-title {
+  color: #7d7bd8;
+}
+
+.uv-tab:hover {
+  color: #7d7bd8;
 }
 
 /*# sourceMappingURL=style.css.map */
