@@ -1,0 +1,26 @@
+$liquid-blue: #026888;
+
+.liquid-landing-left {
+    background-image: url(../../images/pictures/blue-blur-close-up-433108.jpg);
+}
+
+.liquid-landing-right-top {
+    background-color: $liquid-blue;
+}
+
+.liquid-landing-right-bottom {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+.liquid-sidebar {
+    background-color: $liquid-blue;
+}
+
+.liquid-history-title {
+    color: $liquid-blue;
+}
+
+.liquid-tab:hover {
+    color: $liquid-blue;
+}

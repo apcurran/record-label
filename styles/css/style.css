@@ -401,4 +401,58 @@ p + p {
   color: #7d7bd8;
 }
 
+.liquid-landing-left {
+  background-image: url(../../images/pictures/blue-blur-close-up-433108.jpg);
+}
+
+.liquid-landing-right-top {
+  background-color: #026888;
+}
+
+.liquid-landing-right-bottom {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+.liquid-sidebar {
+  background-color: #026888;
+}
+
+.liquid-history-title {
+  color: #026888;
+}
+
+.liquid-tab:hover {
+  color: #026888;
+}
+
+.cutting-landing-left {
+  background-image: url(../../images/pictures/cutting-perspective.jpg);
+}
+
+.cutting-title {
+  color: #000;
+}
+
+.cutting-landing-right-top {
+  background-color: #3e465b;
+}
+
+.cutting-landing-right-bottom {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+.cutting-sidebar {
+  background-color: #3e465b;
+}
+
+.cutting-history-title {
+  color: #3e465b;
+}
+
+.cutting-tab:hover {
+  color: #3e465b;
+}
+
 /*# sourceMappingURL=style.css.map */

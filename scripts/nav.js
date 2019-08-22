@@ -1,3 +1,5 @@
+"use strict";
+
 const navModule = (() => {
     const burgerIcon = document.querySelector(".burger-nav-icon");
     const nav = document.querySelector(".nav");
