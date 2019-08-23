@@ -213,3 +213,61 @@ p + p {
         opacity: 1;
     }
 }
+
+// Smaller Screen Devices //
+@media screen and (max-width: 56.25em) {
+    .landing-page-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }    
+
+    .landing-left {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        &-title {
+            font-size: 2rem;
+        }
+    }
+
+    .landing-right-top {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }
+    
+    .landing-right-bottom {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+    }
+
+    .page-main {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    
+        display: grid;
+        grid-column-gap: 2rem;
+        grid-template-columns: 7fr 2fr;
+        grid-template-rows: 150px 150px 1fr 150px;
+        grid-template-areas:
+            "social social"
+            "tabs tabs"
+            "panel panel"
+            "sidebar sidebar"
+            "sidebar sidebar"
+            "footer footer";
+    }
+
+    .sidebar {
+        margin-top: 2rem;
+    }
+
+    .page-footer { 
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
