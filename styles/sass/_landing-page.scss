@@ -264,6 +264,11 @@ p + p {
 
     .sidebar {
         margin-top: 2rem;
+        padding: 6rem 1.5rem;
+
+        &-fig {
+            width: 225px;
+        }
     }
 
     .page-footer { 
