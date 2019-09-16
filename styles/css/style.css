@@ -211,7 +211,6 @@ a {
 .landing-left {
   grid-column: 1/2;
   grid-row: 1/3;
-  background-color: lightblue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -224,13 +223,11 @@ a {
 .landing-right-top {
   grid-column: 2/3;
   grid-row: 1/2;
-  background-color: lightgreen;
 }
 
 .landing-right-bottom {
   grid-column: 2/3;
   grid-row: 2/3;
-  background-color: coral;
 }
 
 .landing-left,
