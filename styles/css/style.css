@@ -167,6 +167,7 @@ a {
 .nav-artists-title {
   font-size: 1.75rem;
   font-weight: 400;
+  color: #888;
   padding-bottom: 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
