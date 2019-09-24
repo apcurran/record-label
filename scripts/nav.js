@@ -6,6 +6,7 @@ const navModule = (() => {
     const closeBtn = document.querySelector(".nav-section-close");
 
     function openNav(event) {
+        nav.classList.remove("hide");
         nav.classList.add("nav-active");
     }
 

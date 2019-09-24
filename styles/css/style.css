@@ -193,6 +193,11 @@ a {
   transform: translate3d(0, 0, 0);
 }
 
+.hide {
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .header-page {
   position: absolute;
   z-index: 1;
