@@ -3,6 +3,8 @@ Modern Record Label Website
 
 Project [link](https://apcurran.github.io/record-label/)
 
+![Boss Records](https://github.com/apcurran/record-label/blob/master/images/pictures/record-label.jpg)
+
 ## Features:
 
 - JS functionality includes:
