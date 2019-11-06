@@ -18,7 +18,7 @@ const navModule = (() => {
     closeBtn.addEventListener("click", closeNav);
     document.addEventListener("click", (event) => {
         if (event.target === burgerIcon) return;
-        const isOutside = !event.target.closest(".nav") || !burgerIcon;
+        const isOutside = !event.target.closest(".nav");
         if (isOutside) closeNav();
     });
 })();
