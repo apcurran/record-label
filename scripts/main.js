@@ -1,6 +1,7 @@
 "use strict";
 
-const tabsModule = (() => {
+{
+    // Show tabs
     const tabsUl = document.getElementById("tab-list");
     const panels = document.querySelectorAll(".panel");
 
@@ -10,6 +11,7 @@ const tabsModule = (() => {
             
             panels.forEach(panel => {
                 const panelData = panel.dataset.panel;
+                
                 if (panelData === selectedTab) {
                     panel.classList.add("-showing");
                 } else {
@@ -23,9 +25,10 @@ const tabsModule = (() => {
     }
 
     tabsUl.addEventListener("click", showPanel);
-})();
+}
 
-const imageSlideModule = (() => {
+{
+    // Image slider
     const images = document.querySelectorAll(".sidebar-fig-img");
 
     // Debounce func borrowed from Underscore.js
@@ -35,11 +38,13 @@ const imageSlideModule = (() => {
             var context = this, args = arguments;
             var later = function() {
                 timeout = null;
+
                 if (!immediate) func.apply(context, args);
             };
             var callNow = immediate && !timeout;
             clearTimeout(timeout);
             timeout = setTimeout(later, wait);
+
             if (callNow) func.apply(context, args);
         };
     };
@@ -48,6 +53,7 @@ const imageSlideModule = (() => {
         images.forEach(image => {
             const slideInAt = (window.scrollY + window.innerHeight) - (image.height / 3);
             const isThirdShown = slideInAt > image.offsetTop;
+
             if (isThirdShown) {
                 image.classList.add("slide-in");
             }
@@ -55,4 +61,4 @@ const imageSlideModule = (() => {
     }
 
     window.addEventListener("scroll", debounce(imgSlideIn, 25));
-})();
+}

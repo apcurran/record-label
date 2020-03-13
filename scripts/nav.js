@@ -1,6 +1,7 @@
 "use strict";
 
-const navModule = (() => {
+{
+    // Nav Slider
     const burgerIcon = document.querySelector(".burger-nav-icon");
     const nav = document.querySelector(".nav");
     const closeBtn = document.querySelector(".nav-section-close");
@@ -16,9 +17,11 @@ const navModule = (() => {
 
     burgerIcon.addEventListener("click", openNav);
     closeBtn.addEventListener("click", closeNav);
-    document.addEventListener("click", (event) => {
+    document.addEventListener("click", event => {
         if (event.target === burgerIcon) return;
+
         const isOutside = !event.target.closest(".nav");
+
         if (isOutside) closeNav();
     });
-})();
+}
