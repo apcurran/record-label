@@ -8,7 +8,6 @@
     function showPanel(event) {
         if (event.target.tagName === "LI") {
             const selectedTab = event.target.dataset.panel;
-            
             panels.forEach(panel => {
                 const panelData = panel.dataset.panel;
                 
@@ -21,7 +20,6 @@
 
 
         }
-        return;
     }
 
     tabsUl.addEventListener("click", showPanel);
@@ -31,23 +29,18 @@
     // Image slider
     const images = document.querySelectorAll(".sidebar-fig-img");
 
-    // Debounce func borrowed from Underscore.js
-    function debounce(func, wait, immediate) {
-        var timeout;
+    function debounce(func, ms) {
+        let isCooldown = false;
+
         return function() {
-            var context = this, args = arguments;
-            var later = function() {
-                timeout = null;
+            if (isCooldown) return;
 
-                if (!immediate) func.apply(context, args);
-            };
-            var callNow = immediate && !timeout;
-            clearTimeout(timeout);
-            timeout = setTimeout(later, wait);
+            func.apply(this, arguments);
+            isCooldown = true;
 
-            if (callNow) func.apply(context, args);
-        };
-    };
+            setTimeout(() => isCooldown = false, ms);
+        }
+    }
 
     function imgSlideIn(event) {
         images.forEach(image => {
@@ -60,5 +53,5 @@
         });
     }
 
-    window.addEventListener("scroll", debounce(imgSlideIn, 25));
+    window.addEventListener("scroll", debounce(imgSlideIn, 20));
 }
