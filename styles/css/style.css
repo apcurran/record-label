@@ -6,7 +6,6 @@
 
 html {
   font-family: "Poppins", sans-serif;
-  letter-spacing: 0.03em;
   scroll-behavior: smooth;
   line-height: 1.6;
 }
@@ -161,6 +160,7 @@ a {
 }
 .nav-section-close {
   width: 25px;
+  height: auto;
   cursor: pointer;
 }
 .nav-artists {
